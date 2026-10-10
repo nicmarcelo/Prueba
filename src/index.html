@@ -219,6 +219,52 @@ const SHAPES = {
   underline: [
     { d: 'M 10 100 Q 100 88 190 100', w: 1.0 },
   ],
+  // Niña sentada a un escritorio, con auriculares, las manos sobre la mesa
+  // y una piña metalizada a la que le hace ASMR con las uñas.
+  girlDesk: [
+    // torso / camiseta
+    { d: 'M 78 68 C 58 72 48 92 46 150 L 154 150 C 152 92 142 72 122 68 C 116 76 84 76 78 68 Z', f: PASTEL_PURPLE, fo: 0.75 },
+    // cabeza
+    { d: 'M 74 42 a 26 26 0 1 0 52 0 a 26 26 0 1 0 -52 0 Z', f: SKIN, fo: 0.9 },
+    // pelo con flequillo y dos coletas
+    { d: 'M 72 40 C 68 8 132 8 128 40 C 120 28 112 24 100 26 C 88 24 80 28 72 40 Z', c: '#5a3222', f: '#8a5a3c', fo: 0.8 },
+    { d: 'M 74 44 C 58 54 54 76 62 92', c: '#5a3222', w: 1.5 },
+    { d: 'M 126 44 C 142 54 146 76 138 92', c: '#5a3222', w: 1.5 },
+    { d: dot(69, 50, 4), c: PINK, f: PINK, fo: 0.9, w: 0.5 },
+    { d: dot(131, 50, 4), c: PINK, f: PINK, fo: 0.9, w: 0.5 },
+    // auriculares
+    { d: 'M 70 38 C 72 10 128 10 130 38', c: BLUE, w: 1.2 },
+    { d: 'M 64 40 a 6 9 0 1 0 12 0 a 6 9 0 1 0 -12 0 Z', c: BLUE, f: BLUE, fo: 0.7, w: 0.7 },
+    { d: 'M 124 40 a 6 9 0 1 0 12 0 a 6 9 0 1 0 -12 0 Z', c: BLUE, f: BLUE, fo: 0.7, w: 0.7 },
+    // cara feliz y relajada
+    { d: 'M 86 44 q 6 -6 12 0', w: 0.8 },
+    { d: 'M 102 44 q 6 -6 12 0', w: 0.8 },
+    { d: 'M 93 54 q 7 7 14 0', w: 0.8 },
+    { d: dot(80, 52, 4), c: PINK, f: PINK, fo: 0.4, w: 0.4 },
+    { d: dot(120, 52, 4), c: PINK, f: PINK, fo: 0.4, w: 0.4 },
+    // brazos apoyados en la mesa (de los hombros hacia delante)
+    { d: 'M 54 100 C 36 116 38 138 52 150 L 76 150 L 74 136 L 64 126 C 60 118 64 110 68 104 Z', f: SKIN, fo: 0.9 },
+    { d: 'M 146 100 C 164 116 162 138 148 150 L 124 150 L 126 136 L 136 126 C 140 118 136 110 132 104 Z', f: SKIN, fo: 0.9 },
+    // escritorio (delante del cuerpo)
+    { d: 'M 6 150 L 194 150 L 194 166 L 6 166 Z', f: '#f0c27a', fo: 0.7 },
+    { d: 'M 22 166 V 192 M 178 166 V 192', w: 1.0 },
+    // manos sobre el escritorio, dedos hacia la piña
+    { d: 'M 56 140 C 50 150 58 160 72 160 C 82 160 90 154 92 146 L 86 138 Z', f: SKIN, fo: 0.95 },
+    { d: 'M 84 142 l 8 -3 M 86 148 l 9 -1 M 84 154 l 8 2', w: 0.6 },
+    { d: 'M 144 140 C 150 150 142 160 128 160 C 118 160 110 154 108 146 L 114 138 Z', f: SKIN, fo: 0.95 },
+    { d: 'M 116 142 l -8 -3 M 114 148 l -9 -1 M 116 154 l -8 2', w: 0.6 },
+    // piña metalizada entre las manos
+    { d: 'M 84 136 a 16 20 0 1 0 32 0 a 16 20 0 1 0 -32 0 Z', c: '#4b5563', f: '#cfd5df', fo: 0.95, sfx: 'pop' },
+    { d: 'M 90 120 l 20 28 M 86 128 l 20 24 M 96 118 l 18 26 M 110 120 l -20 28 M 114 128 l -20 24 M 104 118 l -18 26', c: '#6b7280', w: 0.45 },
+    { d: 'M 90 124 q 2 -5 7 -6', c: '#ffffff', w: 1.0 },
+    { d: 'M 100 116 l -9 -14 M 100 116 l -2 -20 M 100 116 l 4 -20 M 100 116 l 11 -14 M 96 116 l -14 -8 M 104 116 l 14 -8', c: GREEN, w: 0.9 },
+    // marcas de sonido del tap-tap
+    { d: 'M 122 128 q 8 -4 8 -12', c: PINK, w: 0.8 },
+    { d: 'M 128 136 q 10 -2 14 -10', c: PINK, w: 0.8 },
+    { d: 'M 72 124 q -8 -2 -10 -10', c: PINK, w: 0.8, sfx: 'pop' },
+    { d: star5(58, 112, 6, 2.5), c: YELLOW, f: YELLOW, fo: 0.8, w: 0.4 },
+    { d: star5(146, 112, 6, 2.5), c: YELLOW, f: YELLOW, fo: 0.8, w: 0.4 },
+  ],
 };
 
 // ------------------------------------------------------------------
@@ -228,7 +274,7 @@ const scenes = [];
 let cursor = 0;
 // Global tempo multiplier: the scene script below is authored at a relaxed
 // pace and squeezed so the whole piece lands at exactly 60 s.
-const SPEED = 0.79;
+const SPEED = 0.67;
 function scene(fn) {
   const s = { start: cursor, items: [], eraseA: 0, eraseB: 0 };
   let t = cursor;
@@ -275,7 +321,16 @@ push(scene(a => {
    .draw({ shape: 'star', x: 850, y: 720, scale: 0.55, dur: 0.35, delay: 0.05 });
 }));
 
-// ---- Scene 2: qué es ------------------------------------------------
+// ---- Scene 2: la niña y la piña metalizada --------------------------
+push(scene(a => {
+  a.text({ text: 'Así se hace ASMR', font: 'marker', size: 100, y: 320, color: INK, dur: 1.1 })
+   .draw({ shape: 'girlDesk', x: 540, y: 880, scale: 3.1, dur: 4.6 })
+   .text({ text: 'Tap, tap… con las uñas', font: 'caveat', size: 86, y: 1330, color: BLUE, dur: 1.1 })
+   .text({ text: 'sobre una piña metalizada', font: 'caveat', size: 86, y: 1440, color: INK, dur: 1.2, delay: 0.08 })
+   .text({ text: '¡escalofríos!', font: 'marker', size: 92, y: 1610, color: RED, dur: 0.7 });
+}));
+
+// ---- Scene 3: qué es ------------------------------------------------
 push(scene(a => {
   a.text({ text: '¿Qué es un squishy?', font: 'marker', size: 96, y: 330, color: INK, dur: 1.2 })
    .draw({ shape: 'squished', x: 200, y: 800, scale: 1.3, dur: 0.8 })
@@ -284,10 +339,9 @@ push(scene(a => {
    .draw({ shape: 'arrow', x: 708, y: 790, scale: 0.6, dur: 0.3, delay: 0.08 })
    .draw({ shape: 'full', x: 880, y: 800, scale: 1.3, dur: 0.9, delay: 0.08 })
    .text({ text: 'Espuma de lenta recuperación', font: 'caveat', size: 86, y: 1130, color: BLUE, dur: 1.4 })
-   .text({ text: 'Lo aprietas… y vuelve', font: 'caveat', size: 86, y: 1260, color: INK, dur: 1.0 })
-   .text({ text: 'a su forma, despacito', font: 'caveat', size: 86, y: 1370, color: INK, dur: 1.0, delay: 0.08 })
-   .text({ text: '¡slow rise!', font: 'marker', size: 92, y: 1560, color: RED, dur: 0.7 })
-   .draw({ shape: 'underline', x: 540, y: 1600, scale: 2.0, color: RED, dur: 0.3, delay: 0.05 });
+   .text({ text: 'Lo aprietas y vuelve despacito', font: 'caveat', size: 86, y: 1260, color: INK, dur: 1.2 })
+   .text({ text: '¡slow rise!', font: 'marker', size: 92, y: 1450, color: RED, dur: 0.6 })
+   .draw({ shape: 'underline', x: 540, y: 1490, scale: 2.0, color: RED, dur: 0.3, delay: 0.05 });
 }));
 
 // ---- Scene 3: el sonido ---------------------------------------------
@@ -334,10 +388,10 @@ push(scene(a => {
    .draw({ shape: 'heart', x: 540, y: 660, scale: 1.6, dur: 1.4 })
    .text({ text: 'Relaja y baja el estrés', font: 'caveat', size: 92, y: 1000, color: INK, dur: 1.2 })
    .text({ text: 'súper satisfying', font: 'marker', size: 96, y: 1170, color: PINK, dur: 1.0 })
-   .text({ text: 'y es imposible dejar de verlo', font: 'caveat', size: 84, y: 1320, color: BLUE, dur: 1.4 })
-   .draw({ shape: 'sparkle', x: 220, y: 1500, scale: 0.55, dur: 0.3, delay: 0.1 })
-   .draw({ shape: 'star', x: 540, y: 1540, scale: 0.6, dur: 0.35, delay: 0.05 })
-   .draw({ shape: 'sparkle', x: 860, y: 1500, scale: 0.55, dur: 0.3, delay: 0.05 });
+   .text({ text: 'e imposible dejar de verlo', font: 'caveat', size: 84, y: 1320, color: BLUE, dur: 1.1 })
+   .draw({ shape: 'sparkle', x: 220, y: 1500, scale: 0.55, dur: 0.25, delay: 0.08 })
+   .draw({ shape: 'star', x: 540, y: 1540, scale: 0.6, dur: 0.3, delay: 0.05 })
+   .draw({ shape: 'sparkle', x: 860, y: 1500, scale: 0.55, dur: 0.25, delay: 0.05 });
 }));
 
 // ---- Scene 7: cierre --------------------------------------------------

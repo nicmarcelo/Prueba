@@ -9,17 +9,18 @@ los squishies se colorean, y el barrido del borrador.
 
 Resultado: `output/squishies_asmr_pizarra.mp4`.
 
-## Guion (7 escenas)
+## Guion (8 escenas)
 
 | Escena | Tiempo | Contenido |
 | --- | --- | --- |
-| 1 | 0–7 s | Título "SQUISHIES ASMR", gato squishy, "¿Por qué son tan virales?" |
-| 2 | 8–16 s | ¿Qué es un squishy? Espuma de lenta recuperación, *slow rise* |
-| 3 | 17–24 s | El sonido ASMR: oreja, ondas, crunch · squish · pop, cerebro |
-| 4 | 25–34 s | Los más virales: Taba squishies, Mochi squishies, Squishy makeover |
-| 5 | 35–44 s | La fórmula viral: vídeo vertical, sonido limpio, cámara lenta y bucles |
-| 6 | 45–52 s | ¿Por qué engancha? Relaja, satisfying, imposible dejar de verlo |
-| 7 | 53–60 s | Cierre: ¿Te relajó? Dale like y sígueme para más ASMR |
+| 1 | 0–6 s | Título "SQUISHIES ASMR", gato squishy, "¿Por qué son tan virales?" |
+| 2 | 6–14 s | Así se hace ASMR: una niña sentada a un escritorio, con las manos a la vista, hace tap-tap con las uñas sobre una piña metalizada |
+| 3 | 14–21 s | ¿Qué es un squishy? Espuma de lenta recuperación, *slow rise* |
+| 4 | 21–28 s | El sonido ASMR: oreja, ondas, crunch · squish · pop, cerebro |
+| 5 | 28–37 s | Los más virales: Taba squishies, Mochi squishies, Squishy makeover |
+| 6 | 37–45 s | La fórmula viral: vídeo vertical, sonido limpio, cámara lenta y bucles |
+| 7 | 45–52 s | ¿Por qué engancha? Relaja, satisfying, imposible dejar de verlo |
+| 8 | 52–60 s | Cierre: ¿Te relajó? Dale like y sígueme para más ASMR |
 
 ## Cómo se genera
 
